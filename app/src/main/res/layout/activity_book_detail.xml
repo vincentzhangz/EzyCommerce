@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".BookDetail">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/book_image_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:maxWidth="400dp"
+            android:maxHeight="400dp"
+            android:minWidth="400dp"
+            android:minHeight="400dp" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/book_name_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="Product Name"
+                android:textSize="24dp" />
+
+            <androidx.appcompat.widget.AppCompatRatingBar
+                style="?android:attr/ratingBarStyleIndicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:isIndicator="true"
+                android:maxHeight="40dp"
+                android:minHeight="40dp"
+                android:numStars="5" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <TextView
+            android:id="@+id/book_price_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Price"
+            android:textSize="24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Description"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buy_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Buy" />
+
+        <TextView
+            android:id="@+id/book_description_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:ellipsize="none"
+            android:singleLine="false"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porttitor nisl sem, volutpat bibendum ex imperdiet quis. Nam euismod velit sit amet massa scelerisque, vel mattis purus maximus. Donec eget tempus velit. Ut dictum faucibus euismod. Curabitur feugiat neque ut nisi ornare ornare. Integer id nibh vel mauris facilisis rutrum et sit amet lectus. Integer molestie diam mi, et mollis diam sodales quis. Etiam libero nisi, lobortis ac justo et, commodo tincidunt mauris. Sed laoreet, nulla id finibus ornare, enim eros suscipit arcu, nec rhoncus odio purus vitae felis. Maecenas non odio vel ex laoreet pellentesque vitae sed dolor. Sed risus ante, tempus vitae enim ut, commodo rhoncus dolor. Sed sollicitudin mauris eget lacus convallis scelerisque. Mauris a nunc sed lacus volutpat pretium sed a ipsum. Pellentesque malesuada, velit ut ultrices gravida, metus magna bibendum leo, a commodo magna odio ut ex." />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</ScrollView>
